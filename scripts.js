@@ -749,8 +749,8 @@ class PortfolioEffects {
         const imageUrl = fullSizeUrl || img.src;
         lightbox.innerHTML = `
             <div class="lightbox-content">
+                <button class="lightbox-close">✕</button>
                 <img src="${imageUrl}" alt="${img.alt}">
-                <button class="lightbox-close">&times;</button>
             </div>
         `;
 
@@ -783,43 +783,47 @@ class PortfolioEffects {
                     position: relative;
                     max-width: 100%;
                     margin: auto;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                    display: block;
                     min-height: min-content;
                 }
                 .lightbox img {
                     max-width: 90vw;
-                    max-height: none;
+                    max-height: 85vh;
                     height: auto;
                     width: auto;
                     border-radius: var(--radius-md);
                     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+                    display: block;
+                    margin: 0 auto;
                 }
                 .lightbox-close {
-                    position: sticky;
-                    top: 0;
+                    position: absolute;
+                    top: -50px;
                     right: 0;
-                    align-self: flex-end;
-                    background: rgba(0, 0, 0, 0.7);
-                    border: 2px solid rgba(255, 255, 255, 0.3);
-                    border-radius: 50%;
+                    background: linear-gradient(135deg, #6366f1 0%, #3b82f6 100%);
+                    border: none;
+                    border-radius: 8px;
                     color: white;
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
+                    font-weight: bold;
                     cursor: pointer;
-                    padding: 0.5rem;
-                    margin-bottom: 1rem;
-                    width: 3rem;
+                    padding: 0.75rem 1rem;
+                    min-width: 3rem;
                     height: 3rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    transition: all 0.2s ease;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+                    backdrop-filter: blur(10px);
                 }
                 .lightbox-close:hover {
-                    background: rgba(255, 255, 255, 0.2);
-                    border-color: rgba(255, 255, 255, 0.5);
-                    transform: scale(1.1);
+                    background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+                    transform: translateY(-2px);
+                    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+                }
+                .lightbox-close:active {
+                    transform: translateY(0);
                 }
                 @media (max-width: 768px) {
                     .lightbox {
@@ -827,11 +831,15 @@ class PortfolioEffects {
                     }
                     .lightbox img {
                         max-width: 95vw;
+                        max-height: 80vh;
                     }
                     .lightbox-close {
-                        font-size: 1.25rem;
-                        width: 2.5rem;
+                        font-size: 1.1rem;
+                        padding: 0.5rem 0.75rem;
+                        min-width: 2.5rem;
                         height: 2.5rem;
+                        top: -45px;
+                        right: 5px;
                     }
                 }
             `;
