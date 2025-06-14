@@ -1,0 +1,60 @@
+all prices in pounds (£)
+commissions:
+    sketches:
+        full body 10
+        half body 7
+        bust up 5
+        color +2.50
+    lineart:
+        full body 50
+        half body 40
+        bust up 30
+    painting:
+        full body ???
+        half body ???
+        bust up ???
+
+    "mods":
+        +50% starting price per additional character
+        +50% starting price for any NSFW
+
+    background:
+        gradient + simple pattern FREE
+        simple 10
+        complex 25
+
+    ref sheets:
+        full body angle + close up / 3-5 expressions 50
+        back full body angle 30
+        full body side angle 15
+        accessory / close up 10
+        each added accessory / close up 5 (dependent on detail, add as a * maybe)
+        poses with accessory 35
+        shading 10
+
+    emotes:
+        sticker 320x320 + emoji 128x128 8 each
+        pack of 5 30
+
+    offers?:
+        5 sketches 30
+        with color 40
+
+also add an examples tab, either hidden or at the bottom of the commissions tab, that shows examples of commissions from the categories of sketch, lineart and painting
+
+
+TOS include:
+    - I can deny any request for any reason
+    - Payment is made after sketch through PayPal. No refunds provided after payment.
+    - Preferably have pose ready with reference images of your character(s).
+    - full body changes can be done during the sketch, only small changes during line art, and only colour/lighting changes after line art.
+    - price may increase based off requested commission
+    - NSFW required ID proof
+
+    (also please rephrase TOS more seriously)
+
+
+artist contact info:
+    email - smashedplate73@gmail.com
+    instagram - smashedplate21
+    discord - smashedplate21

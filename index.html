@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smashedplate | Artist Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/site_icon.png">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header class="site-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>Smashedplate</h1>
+                <span class="status-badge" id="commission-status">OPEN</span>
+            </div>
+            
+            <ul class="nav-tabs">
+                <li><button class="nav-btn active" data-section="home">HOME</button></li>
+                <li><button class="nav-btn" data-section="commissions">COMMISSIONS</button></li>
+                <li><button class="nav-btn" data-section="tos">TOS</button></li>
+                <li><button class="nav-btn" data-section="contact">CONTACT</button></li>
+            </ul>
+            
+            <!-- Mobile menu toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="content-section active">
+            <div class="hero-container centered">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Welcome to my art world</h2>
+                        <p class="hero-subtitle">Bringing your furry characters to life through digital art</p>
+                        <p class="hero-description">
+                            Hi! I'm Smashedplate, a digital artist specializing in furry character art. 
+                            I create everything from quick sketches to detailed reference sheets and full illustrations.
+                            Commissions are currently <span class="status-text">OPEN</span>!
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" data-nav="commissions">View Commissions</button>
+                            <button class="btn btn-secondary" data-nav="contact">Get in Touch</button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-frame">
+                            <img src="assets/hero_bust_icon.png" alt="Artist avatar" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commissions Section -->
+        <section id="commissions" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">Commission Types & Pricing</h2>
+                
+                <div class="commission-grid">
+                    <!-- Sketch Card -->
+                    <div class="commission-card">
+                        <div class="card-header">
+                            <h3>Sketch</h3>
+                            <span class="price-range">£5 - £12.50</span>
+                        </div>
+                        <div class="card-image">
+                            <a href="assets/sketch_explorer_nova.png" class="sample-link">
+                                <img src="assets/sketch_explorer_nova.png" alt="Sketch example">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <ul class="price-list">
+                                <li>Bust up - £5</li>
+                                <li>Half body - £7</li>
+                                <li>Full body - £10</li>
+                                <li>Color - +£2.50</li>
+                            </ul>
+                            <p class="turnaround">Turnaround: 3-5 days</p>
+                        </div>
+                    </div>
+
+                    <!-- Lineart Card -->
+                    <div class="commission-card">
+                        <div class="card-header">
+                            <h3>Rendered Lineart</h3>
+                            <span class="price-range">£30 - £50</span>
+                        </div>
+                        <div class="card-image">
+                            <a href="assets/lineart_suit.png" class="sample-link">
+                                <img src="assets/lineart_suit.png" alt="Lineart example">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <ul class="price-list">
+                                <li>Bust up - £30</li>
+                                <li>Half body - £40</li>
+                                <li>Full body - £50</li>
+                            </ul>
+                            <p class="turnaround">Turnaround: 1-2 weeks</p>
+                        </div>
+                    </div>
+
+                    <!-- Painting Card -->
+                    <div class="commission-card">
+                        <div class="card-header">
+                            <h3>Full Painting</h3>
+                            <span class="price-range">Contact for pricing</span>
+                        </div>
+                        <div class="card-image">
+                            <a href="assets/painting_adeptus.png" class="sample-link">
+                                <img src="assets/painting_adeptus.png" alt="Painting example">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <ul class="price-list">
+                                <li>Bust up - Contact for quote</li>
+                                <li>Half body - Contact for quote</li>
+                                <li>Full body - Contact for quote</li>
+                            </ul>
+                            <p class="turnaround">Turnaround: 2-3 weeks</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Reference Sheet Card - Horizontal -->
+                <div class="commission-card horizontal featured">
+                    <div class="horizontal-content">
+                        <div class="horizontal-left">
+                            <div class="card-header">
+                                <h3>Reference Sheet</h3>
+                                <span class="price-range">£50+</span>
+                            </div>
+                            <div class="horizontal-details">
+                                <div class="price-columns">
+                                    <div class="price-column">
+                                        <h4>Base Options</h4>
+                                        <ul class="price-list">
+                                            <li>Full body angle + close up + 3-5 expressions - £50</li>
+                                            <li>Back full body angle - £30</li>
+                                            <li>Full body side angle - £15</li>
+                                            <li>Accessory / close up - £10</li>
+                                            <li>Each additional accessory / close up - £5*</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-column">
+                                        <h4>Add-ons</h4>
+                                        <ul class="price-list">
+                                            <li>Poses with accessory - £35</li>
+                                            <li>Shading - £10</li>
+                                        </ul>
+                                        <p class="note">*Price dependent on detail complexity</p>
+                                    </div>
+                                </div>
+                                <p class="turnaround">Turnaround: 3-4 weeks</p>
+                            </div>
+                        </div>
+                        <div class="horizontal-right">
+                            <div class="card-image">
+                                <a href="assets/refsheet_20250227_201635.jpg" class="sample-link">
+                                    <img src="assets/refsheet_20250227_201635.jpg" alt="Reference sheet example">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="commission-info">
+                    <div class="info-card">
+                        <h4>Modifiers & Add-ons</h4>
+                        <ul>
+                            <li>Additional characters - +50% starting price per character</li>
+                            <li>NSFW content - +50% starting price</li>
+                            <li>Gradient + simple pattern background - FREE</li>
+                            <li>Simple background - +£10</li>
+                            <li>Complex background - +£25</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h4>Special Offers</h4>
+                        <ul>
+                            <li>5 sketches bundle - £30 (save £20!)</li>
+                            <li>5 colored sketches bundle - £40 (save £22.50!)</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Commission Process</h4>
+                        <ol>
+                            <li>Send inquiry with character details</li>
+                            <li>Receive quote & timeline estimate</li>
+                            <li>Sketch creation & approval</li>
+                            <li>Payment through PayPal after sketch approval</li>
+                            <li>Completion & final delivery</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Examples Section -->
+                <div class="examples-section">
+                    <h3>Commission Examples</h3>
+                    <div class="examples-grid">
+                        <div class="example-item">
+                            <h4>Sketch Examples</h4>
+                            <div class="example-gallery">
+                                <a href="assets/sketch_explorer_nova.png" class="example-image">
+                                    <img src="assets/sketch_explorer_nova.png" alt="Sketch example 1">
+                                </a>
+                                <a href="assets/sketch_image1.png" class="example-image">
+                                    <img src="assets/sketch_image1.png" alt="Sketch example 2">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="example-item">
+                            <h4>Lineart Examples</h4>
+                            <div class="example-gallery">
+                                <a href="assets/lineart_suit.png" class="example-image">
+                                    <img src="assets/lineart_suit.png" alt="Lineart example 1">
+                                </a>
+                                <a href="assets/lineart_splitgateNova.png" class="example-image">
+                                    <img src="assets/lineart_splitgateNova.png" alt="Lineart example 2">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="example-item">
+                            <h4>Painting Examples</h4>
+                            <div class="example-gallery">
+                                <a href="assets/painting_adeptus.png" class="example-image">
+                                    <img src="assets/painting_adeptus.png" alt="Painting example">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="example-item">
+                            <h4>Reference Sheet Examples</h4>
+                            <div class="example-gallery">
+                                <a href="assets/refsheet_20250227_201635.jpg" class="example-image">
+                                    <img src="assets/refsheet_20250227_201635.jpg" alt="Reference sheet example">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Terms of Service Section -->
+        <section id="tos" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">Terms of Service</h2>
+                
+                <div class="tos-content">
+                    <div class="tos-section">
+                        <h3>Commission Acceptance & Denial</h3>
+                        <ul>
+                            <li>I reserve the right to deny any commission request for any reason</li>
+                            <li>Please ensure your request aligns with my artistic capabilities and comfort level</li>
+                            <li>Complex mechanical designs or subjects outside my expertise may be declined</li>
+                        </ul>
+                    </div>
+
+                    <div class="tos-section">
+                        <h3>Payment Terms</h3>
+                        <ul>
+                            <li>Payment is required after sketch approval via PayPal only</li>
+                            <li>No refunds will be provided once payment has been made</li>
+                            <li>Commission prices may increase based on complexity of the requested work</li>
+                            <li>Rush orders may incur additional fees - please inquire for availability</li>
+                        </ul>
+                    </div>
+
+                    <div class="tos-section">
+                        <h3>Commission Process & Revisions</h3>
+                        <ul>
+                            <li>Please have pose references and character reference images ready before commissioning</li>
+                            <li>Major changes (full body adjustments, pose changes) can only be made during the sketch phase</li>
+                            <li>Minor changes (small details, accessories) are acceptable during the lineart phase</li>
+                            <li>Only color and lighting adjustments can be made after the lineart phase</li>
+                            <li>Excessive revisions beyond reasonable scope may incur additional charges</li>
+                        </ul>
+                    </div>
+
+                    <div class="tos-section">
+                        <h3>NSFW Content Guidelines</h3>
+                        <ul>
+                            <li>NSFW commissions are accepted with a +50% price modifier</li>
+                            <li>Valid government-issued photo ID verification is required for all NSFW commissions</li>
+                            <li>Extreme content, illegal material, or anything against my personal boundaries will be declined</li>
+                            <li>Client must be 18+ for any NSFW content</li>
+                        </ul>
+                    </div>
+
+                    <div class="tos-section">
+                        <h3>Usage Rights & Artist Rights</h3>
+                        <ul>
+                            <li>Completed artwork is for personal use only unless commercial rights are specifically purchased</li>
+                            <li>Client may post artwork on social media with proper credit to the artist</li>
+                            <li>Artist retains the right to display completed work in portfolio and promotional materials</li>
+                            <li>Artwork may not be used for NFTs, cryptocurrency, or blockchain technologies without explicit permission</li>
+                            <li>Commercial licensing is available - please inquire for separate pricing</li>
+                        </ul>
+                    </div>
+
+                    <div class="tos-section">
+                        <h3>Delivery & Communication</h3>
+                        <ul>
+                            <li>Estimated turnaround times are provided but may vary due to commission complexity</li>
+                            <li>Regular updates will be provided at major milestones</li>
+                            <li>Final artwork delivered as high-resolution files in agreed-upon format</li>
+                            <li>Delays may occur due to health issues, emergencies, or unforeseen circumstances</li>
+                            <li>Client will be notified promptly of any significant delays</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">Get in Touch</h2>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Ready to commission?</h3>
+                        <p>Fill out the form below with your commission details, or reach out via your preferred platform!</p>
+                        
+                        <div class="contact-methods">
+                            <a href="mailto:smashedplate73@gmail.com" class="contact-link">
+                                <span class="icon">📧</span>
+                                <span>Email: smashedplate73@gmail.com</span>
+                            </a>
+                            <a href="https://instagram.com/smashedplate21" class="contact-link" target="_blank">
+                                <span class="icon">📱</span>
+                                <span>Instagram: @smashedplate21</span>
+                            </a>
+                            <a href="#" class="contact-link">
+                                <span class="icon">💬</span>
+                                <span>Discord: smashedplate21</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="commission-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="commission-type">Commission Type</label>
+                            <select id="commission-type" name="commission-type" required>
+                                <option value="">Select a type...</option>
+                                <option value="sketch">Sketch</option>
+                                <option value="lineart">Rendered Lineart</option>
+                                <option value="painting">Full Painting</option>
+                                <option value="reference">Reference Sheet</option>
+                                <option value="emotes">Emotes</option>
+                                <option value="other">Other/Custom</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select range...</option>
+                                    <option value="under-25">Under £25</option>
+                                    <option value="25-50">£25 - £50</option>
+                                    <option value="50-100">£50 - £100</option>
+                                    <option value="100-plus">£100+</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="timeline">Preferred Timeline</label>
+                                <select id="timeline" name="timeline">
+                                    <option value="">No preference</option>
+                                    <option value="rush">Rush order (inquire for availability)</option>
+                                    <option value="normal">Normal timeline</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="character-details">Character Details</label>
+                            <textarea id="character-details" name="character-details" rows="4" 
+                                placeholder="Describe your character(s), pose, expression, etc. Be as detailed as possible!"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="references">Reference Links</label>
+                            <textarea id="references" name="references" rows="3" 
+                                placeholder="Paste links to reference images, character sheets, or inspiration"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="additional-notes">Additional Notes</label>
+                            <textarea id="additional-notes" name="additional-notes" rows="3" 
+                                placeholder="Any other details, special requests, or questions"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">Send Commission Request</button>
+                        
+                        <p class="form-note">
+                            I'll get back to you within 24-48 hours with a quote and timeline estimate!
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>Art: &copy;2025 Smashedplate. | Website: &copy;2025 C0rrupt10n. | All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/smashedplate21" target="_blank">Instagram</a>
+                <a href="mailto:smashedplate73@gmail.com">Email</a>
+                <a href="#">Discord</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="content-config.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
