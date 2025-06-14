@@ -187,13 +187,13 @@ const SiteContent = {
     contactForm: {
         title: "Get in Touch",
         subtitle: "Ready to commission?",
-        description: "Fill out the form below with your commission details, or reach out via your preferred platform!",
+        description: "Reach out to me through any of these platforms!",
         formNote: "I'll get back to you within 24-48 hours with a quote and timeline estimate!"
     },
     
     // Footer
     footer: {
-        copyright: "Art: ©"+currentYear+" Smashedplate. | Website: ©"+currentYear+" C0rrupt10n. | All rights reserved.",
+        copyright: "Art: ©"+currentYear+" Smashedplate21 | Website: ©"+currentYear+" C0rrupt10n | All rights reserved.",
         links: ["Instagram", "Email", "Discord"]
     }
 };
