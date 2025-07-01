@@ -9,7 +9,7 @@ const SiteContent = {
         status: "CLOSED", // "OPEN", "CLOSED", or "HIATUS"
         slots: {
             current: 1,
-            total: 3
+            total: 4
         }
     },
     
