@@ -8,7 +8,7 @@ const SiteContent = {
     commissionStatus: {
         status: "CLOSED", // "OPEN", "CLOSED", or "HIATUS"
         slots: {
-            current: 1,
+            current: 2,
             total: 4
         }
     },
