@@ -167,13 +167,16 @@ class ArtistPortfolio {
     
     getStatusText(commissionData) {
         const { status, slots } = commissionData;
-        const slotsText = `${slots.current}/${slots.total}`;
+        
+        // Only show slot counter if both current and total are not 0
+        const showSlots = slots.current !== 0 || slots.total !== 0;
+        const slotsText = showSlots ? ` (${slots.current}/${slots.total})` : '';
         
         switch (status) {
             case 'OPEN':
-                return `OPEN (${slotsText})`;
+                return `OPEN${slotsText}`;
             case 'CLOSED':
-                return `CLOSED (${slotsText})`;
+                return `CLOSED${slotsText}`;
             case 'HIATUS':
                 return 'HIATUS';
             default:
