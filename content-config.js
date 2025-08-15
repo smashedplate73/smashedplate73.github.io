@@ -6,7 +6,7 @@ const SiteContent = {
     // Site Information
     artistName: "Smashedplate",
     commissionStatus: {
-        status: "CLOSED", // "OPEN", "CLOSED", or "HIATUS"
+        status: "OPEN", // "OPEN", "CLOSED", or "HIATUS"
         slots: {
             current: 0,
             total: 0
@@ -58,9 +58,9 @@ const SiteContent = {
             name: "Full Painting", 
             priceRange: "Contact for pricing",
             prices: [
-                "Bust up - Contact for quote",
-                "Half body - Contact for quote",
-                "Full body - Contact for quote"
+                "Bust up - £75",
+                "Half body - £100",
+                "Full body - £125"
             ],
             turnaround: "2-3 weeks"
         },
