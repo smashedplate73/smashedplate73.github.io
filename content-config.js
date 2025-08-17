@@ -6,7 +6,7 @@ const SiteContent = {
     // Site Information
     artistName: "Smashedplate",
     commissionStatus: {
-        status: "OPEN", // "OPEN", "CLOSED", or "HIATUS"
+        status: "CLOSED", // "OPEN", "CLOSED", or "HIATUS"
         slots: {
             current: 0,
             total: 0
