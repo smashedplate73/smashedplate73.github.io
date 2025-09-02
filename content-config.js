@@ -56,7 +56,7 @@ const SiteContent = {
         
         painting: {
             name: "Full Painting", 
-            priceRange: "Contact for pricing",
+            priceRange: "£75-£125",
             prices: [
                 "Bust up - £75",
                 "Half body - £100",
